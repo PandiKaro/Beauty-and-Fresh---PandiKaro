@@ -192,6 +192,9 @@ select option {
 	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 	
 }
+	.nazwisko,.mail,.data,.rodzaj,.cena{
+		white-space: pre-line;
+	}
 }         
 @media all and (min-width:769px) and (max-width:929px) {
 	
