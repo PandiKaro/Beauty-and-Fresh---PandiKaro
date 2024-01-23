@@ -1,0 +1,296 @@
+body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+		
+     }
+* {
+box-sizing: border-box;
+}
+
+header {
+        background-color: #222222;
+        color: #FFFFFF;
+        text-align: center;
+        padding: 4px;
+		top: 0;
+		width: 100%;
+		left:0;
+		box-sizing: border-box;
+     }
+h1{
+	font-family: 'Dancing Script', sans-serif;
+	font-size: 40px;
+}
+
+nav {
+        background-color: #444444;
+        color: #FFFFFF;
+        text-align: center;
+        padding: 4px;
+		left: 0;
+		width: 100%;
+		box-sizing: border-box;
+    
+        
+     }
+
+nav a {
+        color: #FFFFFF;
+        text-decoration: none;
+        padding: 0 px;
+        margin: 0 13px;
+		box-sizing: border-box;
+      }
+
+  
+
+footer {
+        background-color: #444444;
+        color: #FFFFFF;
+        text-align: center;
+		font-size: 15px;
+        padding: 4px;
+        bottom: 0;
+		width: 100%;
+		box-sizing: border-box;
+       }
+.zakonczenie{
+	width: 100%;
+	box-sizing: border-box;
+	background: url('OBRAZY/zak.jpg') no-repeat top center;
+	height: 400px;
+	background-size: cover;
+	margin-bottom: 0px;
+	margin-top: 60px;
+	opacity: 0.95;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+	
+	
+}
+.tekst-zak{
+	color: white;
+	font-size: 28px;
+	text-align: center;
+	margin-top: -30px;
+	z-index:111113;
+	font-family: 'DM Sans', sans-serif;
+	padding-top: 30px;
+}
+.opis-tytul,.opis,.godziny-otwarcia,.godziny,.adres-tytul,.adres{
+	color: white;
+	font-size: 15px;
+	font-family: 'DM Sans', sans-serif;
+}
+.opis-tytul,.godziny-otwarcia,.adres-tytul{
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+	font-family: 'DM Sans', sans-serif;
+}
+.zak1{
+	margin-left: -950px;
+	margin-top: 100px;
+	text-align: center;
+}
+.zak2{
+	
+	margin-top: -190px;
+	text-align: center;
+}
+.zak3{
+	margin-left: 940px;
+	margin-top: -130px;
+	text-align: center;
+}
+#datetime{
+	color:white;
+	font-family: 'DM Sans', sans-serif;
+	text-align: center;
+	margin-top: -20px;
+}
+.rez{
+	font-size: 28px;
+	text-align: center;
+	color: #444444; 
+	margin-top: 50px;
+	font-family: 'DM Sans', sans-serif;
+}
+#glowny{
+	text-align: center;
+}
+#rezerwacjaForm {
+      
+      margin: 0 auto;
+    }
+#imie, #nazwisko, #data, #zabieg{
+	margin-right: 20px;
+}
+#potwierdzenie{
+	text-align: center;
+	font-family: 'DM Sans', sans-serif;
+}
+#akceptujeWarunki{
+	font-family: 'DM Sans', sans-serif;
+}
+.wizyta, .imie, .nazwisko, .mail, .data, .rodzaj, .cena{
+	color: #bda571 ;
+	 font-weight: bold;
+}
+button {
+  color: #bda571;
+  
+  cursor: pointer;
+}
+
+
+select option {
+  color: #bda571;
+}
+.onas1,.onas2,.onas3{
+	width: 500px;
+	height:auto;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+	
+}
+.zdjecia{
+	margin-left: 10px;
+	display: flex;
+	margin-top: 60px;
+}
+@media only screen and (max-width: 500px) {
+/* Dla urządzeń mobilnych: */
+.zak1,.zak2,.zak3{
+	margin-left: 0px; 
+       
+}
+.zak2,.zak3{
+	margin-top: 10px;
+}
+.zakonczenie{
+	width: 100%;
+	box-sizing: border-box;
+	background: url('OBRAZY/zak.jpg') no-repeat top center;
+	height: 650px;
+	background-size: cover;
+	margin-bottom: 0px;
+	margin-top: 60px;
+	opacity: 0.95;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+	
+	
+}  
+.zdjecia{
+	
+	flex-direction: column;
+	margin-top: 60px;
+}
+.onas1,.onas2,.onas3{
+	width: auto;
+	height:auto;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+	
+}
+}         
+@media all and (min-width:769px) and (max-width:929px) {
+	
+.zak1,.zak2,.zak3{
+	margin-left: 0px; 
+       
+}
+.zak2,.zak3{
+	margin-top: 10px;
+}
+.zakonczenie{
+	width: 100%;
+	box-sizing: border-box;
+	background: url('OBRAZY/zak.jpg') no-repeat top center;
+	height: 650px;
+	background-size: cover;
+	margin-bottom: 0px;
+	margin-top: 60px;
+	opacity: 0.95;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+	
+	
+} 
+.zdjecia{
+	
+	flex-direction: column;
+	margin-top: 60px;
+}
+.onas1,.onas2,.onas3{
+	width: auto;
+	height:auto;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+	
+} 
+}
+@media all and (min-width:930px) and (max-width:1150px) {
+	.zak1,.zak2,.zak3{
+	margin-left: 0px; 
+       
+}
+.zak2,.zak3{
+	margin-top: 10px;
+}
+.zakonczenie{
+	width: 100%;
+	box-sizing: border-box;
+	background: url('OBRAZY/zak.jpg') no-repeat top center;
+	height: 650px;
+	background-size: cover;
+	margin-bottom: 0px;
+	margin-top: 60px;
+	opacity: 0.95;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+	
+	
+}  
+.zdjecia{
+	
+	flex-direction: column;
+	margin-top: 60px;
+}
+.onas1,.onas2,.onas3{
+	width: auto;
+	height:auto;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+	
+}
+}      
+@media all and (min-width:501px) and (max-width:768px) {
+	
+.zak1,.zak2,.zak3{
+	margin-left: 0px; 
+       
+}
+.zak2,.zak3{
+	margin-top: 10px;
+}
+.zakonczenie{
+	width: 100%;
+	box-sizing: border-box;
+	background: url('OBRAZY/zak.jpg') no-repeat top center;
+	height: 650px;
+	background-size: cover;
+	margin-bottom: 0px;
+	margin-top: 60px;
+	opacity: 0.95;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+	
+	
+} 
+.zdjecia{
+	
+	flex-direction: column;
+	margin-top: 60px;
+}
+.onas1,.onas2,.onas3{
+	width: auto;
+	height:auto;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+	
+} 
+}

@@ -1,0 +1,304 @@
+body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+     }
+* {
+box-sizing: border-box;
+}
+
+header {
+        background-color: #222222;
+        color: #FFFFFF;
+        text-align: center;
+        padding: 4px;
+		top: 0;
+		width: 100%;
+		left:0;
+		box-sizing: border-box;
+     }
+h1{
+	font-family: 'Dancing Script', sans-serif;
+	font-size: 40px;
+}
+
+nav {
+        background-color: #444444;
+        color: #FFFFFF;
+        text-align: center;
+        padding: 4px;
+		left: 0;
+		width: 100%;
+		box-sizing: border-box;
+    
+        
+     }
+
+nav a {
+        color: #FFFFFF;
+        text-decoration: none;
+        padding: 0 px;
+        margin: 0 13px;
+		box-sizing: border-box;
+      }
+
+  
+
+footer {
+        background-color: #444444;
+        color: #FFFFFF;
+        text-align: center;
+		font-size: 15px;
+        padding: 4px;
+        bottom: 0;
+		width: 100%;
+		box-sizing: border-box;
+       }
+.zakonczenie{
+	width: 100%;
+	box-sizing: border-box;
+	background: url('OBRAZY/zak.jpg') no-repeat top center;
+	height: 400px;
+	background-size: cover;
+	margin-bottom: 0px;
+	margin-top: 60px;
+	opacity: 0.95;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+	
+	
+}
+.tekst-zak{
+	color: white;
+	font-size: 28px;
+	text-align: center;
+	margin-top: -30px;
+	z-index:111113;
+	font-family: 'DM Sans', sans-serif;
+	padding-top: 30px;
+}
+.opis-tytul,.opis,.godziny-otwarcia,.godziny,.adres-tytul,.adres{
+	color: white;
+	font-size: 15px;
+	font-family: 'DM Sans', sans-serif;
+}
+.opis-tytul,.godziny-otwarcia,.adres-tytul{
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+	font-family: 'DM Sans', sans-serif;
+}
+.zak1{
+	margin-left: -950px;
+	margin-top: 100px;
+	text-align: center;
+}
+.zak2{
+	
+	margin-top: -190px;
+	text-align: center;
+}
+.zak3{
+	margin-left: 940px;
+	margin-top: -130px;
+	text-align: center;
+}
+.kontakt{
+	font-size: 28px;
+	text-align: center;
+	color: #444444; 
+	margin-top: 50px;
+	font-family: 'DM Sans', sans-serif;
+}
+.notka{
+	color: #444444;
+	font-size: 13px;
+	text-align: center;
+	margin-left: 100px;
+	margin-right: 100px;
+	font-family: 'DM Sans', sans-serif;
+}
+.jeden{
+	display: flex;
+	margin-top: 110px;
+	flex-wrap: wrap;
+    justify-content: center;
+}
+.jeden_zdj, .jeden1_zdj{
+	height: 30px;
+	width: auto;
+	margin: 0 170px;
+	
+	
+}
+.jeden1_zdj{
+	margin-left: 45px;
+	
+}
+.x2,.y2,.z2,.w2{
+	margin-left: 95px;
+	margin-top: -40px;
+	font-size: 14px;
+	font-family: 'DM Sans', sans-serif;
+	color: #444444;
+}
+.x2{
+	margin-left: 230px;
+}
+.w2{
+	margin-left: 230px;
+}
+.z2{
+	margin-left: 230px;
+}
+#datetime{
+	color:white;
+	font-family: 'DM Sans', sans-serif;
+	text-align: center;
+	margin-top: -20px;
+}
+@media only screen and (max-width: 768px) {
+/* Dla tabletu: */
+.jeden {
+        display: flex;
+		flex-direction: column;
+        justify-content: center;
+        margin-top: 20px;
+}
+
+.jeden_zdj,
+.jeden1_zdj {
+        height: 30px;
+        width: auto;
+        margin-left: 250px;    
+}
+.y,.z,.x,.w{
+	margin: 15px;		
+}
+.y2,.z2,.x2,.w2{
+	margin-left: 300px;		
+}
+.zak1,.zak2,.zak3{
+	margin-left: 0px; 
+       
+}
+.zak2,.zak3{
+	margin-top: 10px;
+}
+.zakonczenie{
+	width: 100%;
+	box-sizing: border-box;
+	background: url('OBRAZY/zak.jpg') no-repeat top center;
+	height: 650px;
+	background-size: cover;
+	margin-bottom: 0px;
+	margin-top: 60px;
+	opacity: 0.95;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+	
+	
+}
+}
+@media only screen and (max-width: 500px) {
+/* Dla urządzeń mobilnych: */
+.jeden {
+        display: flex;
+		flex-direction: column;
+        justify-content: center;
+        margin-top: 20px;
+}
+
+.jeden_zdj,
+.jeden1_zdj {
+        height: 30px;
+        width: auto;
+        margin-left: 90px;    
+}
+.y,.z,.x,.w{
+	margin: 15px;		
+}
+.y2,.z2,.x2,.w2{
+	margin-left: 150px;		
+}
+}         
+@media all and (min-width:769px) and (max-width:929px) {
+	.jeden {
+        display: flex;
+		flex-direction: column;
+        justify-content: center;
+        margin-top: 20px;
+}
+.jeden_zdj,
+.jeden1_zdj {
+        height: 30px;
+        width: auto;
+        margin-left: 250px;    
+}
+.y,.z,.x,.w{
+	margin: 15px;		
+}
+.y2,.z2,.x2,.w2{
+	margin-left: 300px;		
+}
+.zak1,.zak2,.zak3{
+	margin-left: 0px; 
+       
+}
+.zak2,.zak3{
+	margin-top: 10px;
+}
+.zakonczenie{
+	width: 100%;
+	box-sizing: border-box;
+	background: url('OBRAZY/zak.jpg') no-repeat top center;
+	height: 650px;
+	background-size: cover;
+	margin-bottom: 0px;
+	margin-top: 60px;
+	opacity: 0.95;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+	
+	
+}  
+}
+@media all and (min-width:930px) and (max-width:1150px) {
+	.zak1,.zak2,.zak3{
+	margin-left: 0px; 
+       
+}
+.zak2,.zak3{
+	margin-top: 10px;
+}
+.zakonczenie{
+	width: 100%;
+	box-sizing: border-box;
+	background: url('OBRAZY/zak.jpg') no-repeat top center;
+	height: 650px;
+	background-size: cover;
+	margin-bottom: 0px;
+	margin-top: 60px;
+	opacity: 0.95;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+	
+	
+}  
+.jeden {
+        display: flex;
+		flex-direction: column;
+        justify-content: center;
+        margin-top: 20px;
+}
+.jeden_zdj,
+.jeden1_zdj {
+        height: 30px;
+        width: auto;
+        ->margin-left: 250px;    
+}
+.y,.z,.x,.w{
+	margin: 15px;	
+    margin-left: 200px;	
+}
+.y{
+	margin-left: 330px;		
+} 
+}      

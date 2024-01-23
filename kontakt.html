@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<html lang="pl">
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="Karolina Graf">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="favicon.png">
+	<title>Kontakt - medycyna estetyczna, Salon Urody PandiKaro</title>
+	<link rel="stylesheet" href="kontakt.css">
+	<style>
+	</style>
+    </head>
+
+	<body>
+	 <header>
+        <h1>Beauty and Fresh PandiKaro</h1>
+     </header>
+	 <nav>
+        <a href="./index.html">Strona Główna</a>
+        <a href="./onas.html#o-nas">O Nas</a>
+        <a href="./file:///C:/Users/Karolina/Desktop/Zaliczenie_HTML_Graf_Karolina/cennik.html">Cennik</a>
+		<a href="./rezerwacja.html">Zarezerwuj wizytę</a>
+		<a href="./promocje.html">Promocje</a>
+		<a href="./kontakt.html">Kontakt</a>
+     </nav>
+	 
+	 <h2 class="kontakt">KONTAKT</h2>
+	 <p class="notka"><b>Salon urody PandiKaro</b> to prestiżowy salon urody ulokowany w samym centrum Krakowa przy ul. Karmelickiej 12.<br><br>W Naszym Salonie oferujemy szereg zabiegów z zakresu medycyny estetycznej, laseroterapii, kosmetologii czy też fryzjerstwa.<br><br>W swojej ofercie posiadamy kuracje usuwające blizny, naczynka, przebarwienia, wykonujemy botox, powiększanie ust, depilację laserową, wybielanie zębów, manicure i pedicure i wiele innych. Zapraszamy także do skorzystania z oferty masaży, zabiegów wyszczuplających czy kuracji na dłonie i stopy.<br><br>Gwarantujemy najwyższą jakość usług. Zabiegi wykonywane są przy użyciu światowej klasy laserów medycznych i profesjonalnego sprzętu kosmetycznego z certyfikatami FDA.<br><br>Jeśli zatem szukasz miejsca, które łączy wysoką jakość zabiegów, wykształconą kadrę, atrakcyjną ofertę cenową i przyjazną atmosferę to zapraszamy Cię do <b>Naszego Salonu Urody.</b></p>
+	 
+	 <div class="jeden">
+	 
+	    <div class="y">
+	    <img class="jeden1_zdj" src="OBRAZY/lok.png" alt="">
+		<p class="y2">ul. Karmelicka 12<br>31-128 Kraków</p>
+		</div>
+		
+		<div class="z">
+		<img class="jeden_zdj" src="OBRAZY/phone.png" alt="">
+		<p class="z2">+48 12 34 56 789<br>+48 123 456 789<br>kontakt@pandikaro.com</p>
+		</div>
+		
+		<div class="x">
+		<img class="jeden_zdj" src="OBRAZY/zegar.png" alt="">
+		<p class="x2">Poniedziałek - Piątek: 08:00–20:00<br>Sobota: 10:00–20:00<br>Niedziela: nieczynne</p>
+		</div>
+		
+		<div class="w">
+		<img class="jeden_zdj" src="OBRAZY/ig.png" alt="">
+		<p class="w2">Znajdź Nas na Instagramie: <br>Salon_Urody_PandiKaro</p>
+		</div>
+		
+	 </div>
+	 
+	 
+	 
+	 <div class="zakonczenie">
+	      <h2 class="tekst-zak"> SKONTAKTUJ SIĘ Z NAMI</h2><div id="datetime"></div>
+		  
+		   <div class="zak1">
+		     <p class="opis-tytul">Salon Urody PandiKaro</p>
+			 <p class="opis">Salon urody PandiKaro mieszczący <br>się w samym centrum Krakowa oferuje <br>szeroką gamę zabiegów z zakresu <br>pielęgnacji ciała, twarzy i włosów.<br> Najwyższa jakość, najlepsze rezultaty - <br>gabinet urody Kraków.</p>
+		   </div>
+		   
+		   <div class="zak2">
+			 <p class="godziny-otwarcia">Godziny otwarcia:</p>
+			 <p class="godziny">Poniedziałek - Piątek: 08:00–20:00<br>Sobota: 10:00–20:00<br>Niedziela: nieczynne</p>
+		   </div>
+		   
+           <div class="zak3">		   
+			 <p class="adres-tytul">Adres:</p>
+			 <p class="adres">ul. Karmelicka 12<br>31-128 Kraków<br>Wojewódzstwo małopolskie, Polska</p>
+		   </div>
+		   
+	   </div>
+	 
+	 <footer>
+        &copy; 2023 Salon Urody PandiKaro. Wszystkie prawa zastrzeżone.
+    </footer>
+	
+	
+	
+	
+	<script>
+    function aktualnaData() {
+      var dzisiaj = new Date();
+      var dzienTygodnia = dzisiaj.toLocaleDateString('pl-PL', { weekday: 'long' });
+      var dzien = dzisiaj.getDate();
+      var miesiac = dzisiaj.toLocaleDateString('pl-PL', { month: 'long' });
+      var rok = dzisiaj.getFullYear();
+      var godzina = dzisiaj.getHours();
+      var minuty = dzisiaj.getMinutes();
+      var sekundy = dzisiaj.getSeconds();
+
+      var pelnaDataICzas = dzienTygodnia + ', ' + dzien + ' ' + miesiac + ' ' + rok + ' ' + godzina + ':' + dodajZero(minuty) + ':' + dodajZero(sekundy);
+      
+      document.getElementById('datetime').innerText = pelnaDataICzas;
+      
+      setTimeout(aktualnaData, 1000);
+    }
+
+    function dodajZero(i) {
+      return i < 10 ? "0" + i : i;
+    }
+
+    aktualnaData(); 
+  </script>
+	
+</body>
+</html>

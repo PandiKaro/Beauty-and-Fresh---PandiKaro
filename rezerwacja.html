@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<html lang="pl">
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="Karolina Graf">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="favicon.png">
+	<title>Rezerwacja - medycyna estetyczna, Salon Urody PandiKaro</title>
+	<link rel="stylesheet" href="rezerwacja.css">
+	<style>
+	</style>
+    </head>
+
+	<body>
+	 <header>
+        <h1>Beauty and Fresh PandiKaro</h1>
+     </header>
+	 <nav>
+        <a href="./index.html">Strona Główna</a>
+        <a href="./onas.html#o-nas">O Nas</a>
+        <a href="./cennik.html">Cennik</a>
+		<a href="./rezerwacja.html">Zarezerwuj wizytę</a>
+		<a href="./promocje.html">Promocje</a>
+		<a href="./kontakt.html">Kontakt</a>
+     </nav>
+	 
+	 <h2 class="rez">ZAREZERWUJ ONLINE SWOJĄ WIZYTĘ JUŻ TERAZ!</h2><br>
+	 
+	    <div id="glowny">
+	 <form id="rezerwacjaForm" onsubmit="zarezerwujUsluge(event)">
+    <label for="imie" class="imie">Imię:</label>
+    <input type="text" id="imie" required>
+
+    <label for="nazwisko" class="nazwisko">Nazwisko:</label>
+    <input type="text" id="nazwisko" required>
+
+    <label for="email" class="mail">E-mail:</label>
+    <input type="email" id="email" required>
+
+    <br><br><br><label for="data" class="data">Data zabiegu:</label>
+    <select id="data" required>
+      <option value="2024-01-20">26 styczeń godz. 17:00</option>
+      <option value="2024-01-20">28 styczeń godz. 13:15</option>
+	  <option value="2024-01-20">29 styczeń godz. 10:30</option>
+	  <option value="2024-01-20">02 luty godz. 16:00</option>
+	  <option value="2024-01-20">03 luty godz. 10:45</option>
+	  <option value="2024-01-20">11 luty godz. 17:45</option>
+	  <option value="2024-01-20">01 marzec godz. 09:00</option>
+	  <option value="2024-01-20">16 marzec godz. 15:10</option>
+	  <option value="2024-01-20">24 marzec godz. 12:05</option>
+	  <option value="2024-01-20">07 kwiecień godz. 16:20</option>
+	  <option value="2024-01-20">10 kwiecień godz. 08:00</option>
+    </select>
+
+    <label for="zabieg" class="rodzaj">Rodzaj zabiegu:</label>
+    <select id="zabieg" onchange="aktualizujCene()" required>
+      <option value="ENDERMOLOGIA">ENDERMOLOGIA</option>
+      <option value="KRIOLIPOLIZA">KRIOLIPOLIZA</option>
+	  <option value="TERMOAKTYWNY ZABIEG NA CIAŁO">TERMOAKTYWNY ZABIEG NA CIAŁO</option>
+	  <option value="MASAŻ">MASAŻ</option>
+	  <option value="DEPILACJA WOSKIEM">DEPILACJA WOSKIEM</option>
+	  <option value="RADIOFREKWENCJA MIKROIGŁOWA">RADIOFREKWENCJA MIKROIGŁOWA</option>
+	  <option value="BLOOMEA">BLOOMEA</option>
+	  <option value="OSOCZE BOGATOPŁYTKOWE">OSOCZE BOGATOPŁYTKOWE</option>
+	  <option value="ZABIEG PROXN">ZABIEG PROXN</option>
+	  <option value="IMAGE VIT. C">IMAGE VIT. C</option>
+	  <option value="CHILI">CHILI</option>
+	  <option value="ZABIEGI ZŁUSZCZAJĄCE">ZABIEGI ZŁUSZCZAJĄCE</option>
+      <option value="MASAŻ TWARZY">MASAŻ TWARZY</option>
+    </select>
+
+    <label for="cena" class="cena">Cena zabiegu:</label>
+    <span id="cenaWyswietlacz">0 PLN</span>
+
+    <br><br><label>
+      <input type="checkbox" id="akceptujeWarunki" required>*Akceptuję warunki rezerwacji&nbsp; </label>
+
+    <button type="submit"><b>Zarezerwuj</b></button>
+  </form>
+     </div>
+
+  <div id="potwierdzenie" style="display: none;">
+    <h3 class="wizyta">Wizyta została zarezerwowana!</h3>
+    <p>Dziękujemy za dokonanie rezerwacji. Potwierdzenie zostało wysłane na Twój adres e-mail.</p>
+  </div>
+	 
+	 
+	 
+	 
+	 
+	 
+	 <div class="zdjecia">
+	 <img src="OBRAZY/onas1.jpg" alt="" class="onas1">
+	 <img src="OBRAZY/onas2.jpg" alt="" class="onas2">
+	 <img src="OBRAZY/onas3.jpg" alt="" class="onas3">
+	 </div>
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 <div class="zakonczenie">
+	      <h2 class="tekst-zak"> SKONTAKTUJ SIĘ Z NAMI</h2><div id="datetime"></div>
+		  
+		   <div class="zak1">
+		     <p class="opis-tytul">Salon Urody PandiKaro</p>
+			 <p class="opis">Salon urody PandiKaro mieszczący <br>się w samym centrum Krakowa oferuje <br>szeroką gamę zabiegów z zakresu <br>pielęgnacji ciała, twarzy i włosów.<br> Najwyższa jakość, najlepsze rezultaty - <br>gabinet urody Kraków.</p>
+		   </div>
+		   
+		   <div class="zak2">
+			 <p class="godziny-otwarcia">Godziny otwarcia:</p>
+			 <p class="godziny">Poniedziałek - Piątek: 08:00–20:00<br>Sobota: 10:00–20:00<br>Niedziela: nieczynne</p>
+		   </div>
+		   
+           <div class="zak3">		   
+			 <p class="adres-tytul">Adres:</p>
+			 <p class="adres">ul. Karmelicka 12<br>31-128 Kraków<br>Wojewódzstwo małopolskie, Polska</p>
+		   </div>
+		   
+	   </div>
+	 
+	 <footer>
+        &copy; 2023 Salon Urody PandiKaro. Wszystkie prawa zastrzeżone.
+    </footer>
+	
+	<script>
+    function aktualnaData() {
+      var dzisiaj = new Date();
+      var dzienTygodnia = dzisiaj.toLocaleDateString('pl-PL', { weekday: 'long' });
+      var dzien = dzisiaj.getDate();
+      var miesiac = dzisiaj.toLocaleDateString('pl-PL', { month: 'long' });
+      var rok = dzisiaj.getFullYear();
+      var godzina = dzisiaj.getHours();
+      var minuty = dzisiaj.getMinutes();
+      var sekundy = dzisiaj.getSeconds();
+
+      var pelnaDataICzas = dzienTygodnia + ', ' + dzien + ' ' + miesiac + ' ' + rok + ' ' + godzina + ':' + dodajZero(minuty) + ':' + dodajZero(sekundy);
+      
+      document.getElementById('datetime').innerText = pelnaDataICzas;
+      
+      setTimeout(aktualnaData, 1000);
+    }
+
+    function dodajZero(i) {
+      return i < 10 ? "0" + i : i;
+    }
+
+    aktualnaData(); 
+  </script>
+  
+  <script>
+    function zarezerwujUsluge(event) {
+      event.preventDefault(); 
+      
+      
+      var imie = document.getElementById('imie').value;
+      var nazwisko = document.getElementById('nazwisko').value;
+      var email = document.getElementById('email').value;
+      var data = document.getElementById('data').value;
+      var zabieg = document.getElementById('zabieg').value;
+      var akceptujeWarunki = document.getElementById('akceptujeWarunki').checked;
+
+      
+      
+
+      
+      
+
+
+      
+      if (akceptujeWarunki) {
+        
+        document.getElementById('rezerwacjaForm').style.display = 'none';
+        document.getElementById('potwierdzenie').style.display = 'block';
+      } else {
+        alert("Aby zarezerwować usługę, musisz zaakceptować warunki.");
+      }
+    }
+
+    function aktualizujCene() {
+      var cenaWyswietlacz = document.getElementById('cenaWyswietlacz');
+      var wybranyZabieg = document.getElementById('zabieg');
+      var wybranaOpcja = wybranyZabieg.options[wybranyZabieg.selectedIndex];
+      cenaWyswietlacz.textContent = pobierzCeneZabiegu(wybranaOpcja.value) + ' PLN';
+    }
+
+    function pobierzCeneZabiegu(rodzajZabiegu) {
+      
+      switch (rodzajZabiegu) {
+        case 'ENDERMOLOGIA':
+          return '180 - 2 500';
+        case 'KRIOLIPOLIZA':
+          return '800 - 2 000';
+        case 'TERMOAKTYWNY ZABIEG NA CIAŁO':
+          return '180 - 550';
+		case 'MASAŻ':
+          return '70 - 250';
+		case 'DEPILACJA WOSKIEM':
+          return '80 - 150';
+		case 'RADIOFREKWENCJA MIKROIGŁOWA':
+          return '600 - 1 600';
+		case 'BLOOMEA':
+          return '380 - 450';
+		case 'OSOCZE BOGATOPŁYTKOWE':
+          return '500 - 1 250';
+		case 'ZABIEG PROXN':
+          return 350;
+		case 'IMAGE VIT. C':
+          return 320;
+		case 'CHILI':
+          return '250 - 300';
+		case 'ZABIEGI ZŁUSZCZAJĄCE':
+          return 250;
+		case 'MASAŻ TWARZY':
+          return 250;
+        default:
+          return 0;
+      }
+    }
+  </script>
+	
+</body>
+</html>
