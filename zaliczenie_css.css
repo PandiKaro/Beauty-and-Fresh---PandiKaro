@@ -400,6 +400,9 @@ button{
 	flex-direction: column;
 	margin-left: 50px;
 }
+	h1{
+		font-family: 'Dancing Script', sans-serif;
+	}
 }         
 @media all and (min-width:769px) and (max-width:929px) {
 	
